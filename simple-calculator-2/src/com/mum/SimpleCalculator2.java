@@ -49,6 +49,23 @@ public class SimpleCalculator2 extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.print("<html><head><title>Simple Calculator 2</title></head><body>");
+        out.print("<form method='post'>");
+        out.print("<div>\n" +
+                "        <input type=\"text\" pattern=\"\\d*\" size=\"5\" name=\"add1\"> +\n" +
+                "        <input type=\"text\" pattern=\"\\d*\" size=\"5\" name=\"add2\"> =\n" +
+                "        <input type=\"text\" pattern=\"\\d*\" size=\"5\" name=\"addResult\">\n" +
+                "    </div>\n" +
+                "    <div>\n" +
+                "        <input type=\"text\" pattern=\"\\d*\" size=\"5\" name=\"times1\"> *\n" +
+                "        <input type=\"text\" pattern=\"\\d*\" size=\"5\" name=\"times2\"> =\n" +
+                "        <input type=\"text\" pattern=\"\\d*\" size=\"5\" name=\"timesResult\">\n" +
+                "    </div>\n" +
+                "\n" +
+                "    <button type=\"submit\">Submit</button>");
+        out.print("</form>");
+        out.print("</body></html>");
     }
 }

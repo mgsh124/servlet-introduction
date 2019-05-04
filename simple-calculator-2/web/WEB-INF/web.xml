@@ -9,6 +9,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SimpleCalculator2</servlet-name>
-        <url-pattern>/SimpleCalculator2</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>
