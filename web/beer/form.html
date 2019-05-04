@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beer Advisor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="center">Beer selection page</h1>
+    <form action="../SelectBeer.do" method="post">
+        <fieldset>
+            <legend>Select beer characteristics</legend>
+
+            <div class="row">
+                <label for="color">Color:</label>
+                <select name="color" id="color">
+                    <option value="light">light</option>
+                    <option value="amber">amber</option>
+                    <option value="brown">brown</option>
+                    <option value="dark">dark</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
