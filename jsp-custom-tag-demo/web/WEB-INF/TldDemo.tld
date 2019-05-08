@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>tlddemo</short-name>
+    <uri>/WEB-INF/TldDemo</uri>
+    <tag>
+        <description>Generates a label</description>
+        <name>label</name>
+        <tag-class>com.mum.Label</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>foreColor</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>text</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+    
+</taglib>

@@ -1,0 +1,40 @@
+body {
+    max-width: 860px;
+    margin: 10px auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.row label:first-child {
+    font-weight: bold;
+    width: 5em;
+    display: inline-block;
+}
+
+.row select {
+    width: 10em;
+    height: 1.5em;
+    font-size: 1em;
+}
+
+button {
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+button[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+}
